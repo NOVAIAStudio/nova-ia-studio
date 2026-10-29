@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0912">
+<meta name="description" content="Nova IA Studio crée des publicités courtes et des visuels créatifs avec l’intelligence artificielle pour les réseaux sociaux.">
+<title>Nova IA Studio — Publicités créatives avec l’IA</title>
+<style>
+:root{--bg:#0b0912;--panel:#15111f;--purple:#9b6bff;--pink:#e4c7ff;--white:#fbf8ff;--muted:#b9b1c9;--line:#342744}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#281542 0,transparent 38%),var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+header{padding:22px 0;border-bottom:1px solid #ffffff14}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:14px;letter-spacing:.16em;font-weight:900}.logo span{color:var(--purple)}
+.nav a{font-size:14px;text-decoration:none;color:var(--muted)}
+.hero{padding:86px 0 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center}
+.eyebrow{color:var(--pink);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}
+h1{font-size:clamp(42px,7vw,76px);line-height:.99;letter-spacing:-.055em;margin:18px 0}
+h1 em{font-style:normal;color:var(--pink)}
+.lead{color:var(--muted);font-size:18px;max-width:570px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;padding:13px 19px;border-radius:12px;font-weight:800;font-size:14px}
+.primary{background:var(--purple);color:#130b20;box-shadow:0 10px 35px #9b6bff30}
+.secondary{border:1px solid var(--line);color:var(--white)}
+.art{min-height:330px;border-radius:28px;border:1px solid #ffffff20;background:linear-gradient(145deg,#24143a,#100d18 60%);padding:25px;display:flex;align-items:end;position:relative;overflow:hidden}
+.orb{position:absolute;width:230px;height:230px;right:8%;top:8%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f0d8ff,#9b6bff 35%,#40206e 68%,#140d20);box-shadow:0 0 90px #9b6bff45}
+.orb:after{content:"";position:absolute;inset:18%;border:1px solid #ffffff50;border-radius:50%;transform:rotate(-35deg) scaleX(1.4)}
+.art-caption{position:relative;z-index:1}.art-caption small{color:var(--pink);letter-spacing:.18em}.art-caption strong{display:block;font-size:28px;line-height:1.1;margin-top:8px}
+.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.tag{font-size:11px;letter-spacing:.06em;border:1px solid var(--line);background:#ffffff05;padding:8px 11px;border-radius:999px;color:var(--pink)}
+section{padding:54px 0}
+.section-head{max-width:650px;margin-bottom:25px}
+h2{font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0}
+.section-head p,.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{border:1px solid var(--line);background:linear-gradient(145deg,#191323,#100d17);border-radius:22px;overflow:hidden}
+.visual{height:210px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.food{background:radial-gradient(ellipse at center,#6e3d23,#23130f 48%,#100b0c)}
+.burger{font-size:98px;filter:drop-shadow(0 20px 18px #0009)}
+.perfume{background:radial-gradient(ellipse at center,#4b351f,#17121b 55%,#0c0a10)}
+.bottle{height:135px;width:75px;border-radius:18px 18px 13px 13px;background:linear-gradient(90deg,#080808,#272323 35%,#080808 80%);border:1px solid #9f8455;box-shadow:0 15px 45px #0009;position:relative}
+.bottle:before{content:"";position:absolute;width:27px;height:26px;left:23px;top:-28px;background:linear-gradient(90deg,#302619,#b9a16d,#332719);border-radius:4px}
+.bottle:after{content:"N° 01";position:absolute;top:55px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.1em;color:#d7c39a}
+.card-body{padding:22px}.card h3{margin:0 0 7px;font-size:20px}.card p{margin:0;color:var(--muted);font-size:14px}
+.note{font-size:12px;color:#8e859d;margin-top:14px}
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.service{padding:22px;border:1px solid var(--line);border-radius:18px;background:#ffffff04}
+.service .num{font-size:12px;color:var(--pink);letter-spacing:.12em}.service h3{font-size:17px;margin:10px 0 6px}.service p{font-size:14px;color:var(--muted);margin:0}
+.contact{border:1px solid #65449b;background:linear-gradient(130deg,#25153c,#14101c);border-radius:26px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.contact h2{margin-top:0}.contact p{color:var(--muted);margin-bottom:0}
+footer{padding:30px 0 38px;color:#8e859d;font-size:12px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:55px 0 40px;gap:25px}.art{min-height:270px}.cards{grid-template-columns:1fr}.services{grid-template-columns:1fr}.contact{display:block;padding:26px}.contact .btn{margin-top:18px}.nav a{font-size:12px}.wrap{width:min(100% - 30px,1100px)}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="logo">NOVA <span>IA</span> STUDIO</div><a href="#contact">Parlons de votre projet ↗</a></div></header>
+<main>
+<div class="wrap hero">
+<div>
+<div class="eyebrow">Studio créatif · Intelligence artificielle</div>
+<h1>Des idées qui deviennent <em>des publicités.</em></h1>
+<p class="lead">Des concepts visuels et des vidéos courtes conçus pour capter l’attention sur TikTok, Instagram Reels et YouTube Shorts.</p>
+<div class="actions"><a class="btn primary" href="#contact">Créer une publicité ↗</a><a class="btn secondary" href="#realisations">Voir les concepts</a></div>
+<div class="tags"><span class="tag">PUBLICITÉS IA</span><span class="tag">VIDÉOS VERTICALES</span><span class="tag">VOIX OFF</span></div>
+</div>
+<div class="art"><div class="orb"></div><div class="art-caption"><small>IMAGINE · CRÉE · MARQUE</small><strong>Une nouvelle<br>façon de raconter.</strong></div></div>
+</div>
+<section id="realisations"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Premiers concepts</div><h2>Deux univers. Une même ambition.</h2><p>Des démonstrations créatives pour illustrer les possibilités de la publicité assistée par IA.</p></div>
+<div class="cards">
+<article class="card"><div class="visual food"><div class="burger">🍔</div></div><div class="card-body"><h3>Food — « Tu as faim ? »</h3><p>Un concept dynamique pensé pour rendre un produit gourmand et attirer l’œil dès les premières secondes.</p><div class="note">Concept publicitaire · Démonstration créative</div></div></article>
+<article class="card"><div class="visual perfume"><div class="bottle"></div></div><div class="card-body"><h3>Parfum — « Le luxe se ressent »</h3><p>Un univers sombre et élégant, une voix off française et une signature visuelle inspirée des campagnes premium.</p><div class="note">Concept publicitaire · Démonstration créative</div></div></article>
+</div>
+<p class="note">Les visuels présentés ici sont des illustrations de concept. Les vidéos finales pourront être ajoutées à cette page ensuite.</p>
+</div></section>
+<section><div class="wrap"><div class="section-head"><div class="eyebrow">Services</div><h2>Du contenu fait pour arrêter le scroll.</h2></div>
+<div class="services">
+<div class="service"><div class="num">01 / VIDÉO</div><h3>Publicités courtes</h3><p>Des formats verticaux conçus pour les réseaux sociaux et les campagnes de marque.</p></div>
+<div class="service"><div class="num">02 / VISUELS</div><h3>Création visuelle IA</h3><p>Des ambiances et des images créatives adaptées à l’identité d’un produit.</p></div>
+<div class="service"><div class="num">03 / MONTAGE</div><h3>Montage & voix off</h3><p>Textes à l’écran, rythme, musique et narration pour construire une mini-publicité.</p></div>
+</div></div></section>
+<section id="contact"><div class="wrap"><div class="contact"><div><div class="eyebrow">Vous avez un projet ?</div><h2>Créons quelque chose<br>qui se remarque.</h2><p>Décrivez votre produit et l’idée que vous avez en tête.</p></div><a class="btn primary" href="mailto:umit.kilicoglu@icloud.com?subject=Projet%20publicit%C3%A9%20-%20Nova%20IA%20Studio">Écrire un e-mail ↗</a></div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Nova IA Studio · Publicités créatives avec l’IA · <a href="mailto:umit.kilicoglu@icloud.com">umit.kilicoglu@icloud.com</a></div></footer>
+</body>
+</html>
