@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nova IA Studio | Publicités IA</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b0912;color:#faf7ff;font-family:Arial,sans-serif;line-height:1.6}
+header,section,footer{padding:28px 7%;max-width:1050px;margin:auto}
+header{color:#c9a5ff;font-weight:bold;letter-spacing:3px}
+.hero{padding-top:65px;padding-bottom:65px}
+.tag{color:#c9a5ff;text-transform:uppercase;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(40px,9vw,70px);line-height:1.04;margin:15px 0}
+h1 span,h2 span{color:#b58aff}
+p{color:#c1b8ce}
+.btn{display:inline-block;background:#b58aff;color:#160c24;padding:13px 19px;border-radius:9px;text-decoration:none;font-weight:bold;margin-top:15px}
+.card{background:#191323;border:1px solid #382747;border-radius:16px;padding:22px;margin:15px 0}
+.art{font-size:70px;text-align:center;padding:30px;background:linear-gradient(135deg,#321d43,#111);border-radius:12px}
+h2{font-size:30px}
+small{color:#b58aff}
+footer{border-top:1px solid #382747;font-size:13px}
+a{color:#c9a5ff}
+</style>
+</head>
+<body>
+<header>NOVA IA STUDIO</header>
+<section class="hero">
+<div class="tag">Studio créatif · Intelligence artificielle</div>
+<h1>Des idées qui deviennent <span>des publicités.</span></h1>
+<p>Nous créons des concepts publicitaires et des vidéos courtes pour TikTok, Instagram Reels et YouTube Shorts.</p>
+<a class="btn" href="mailto:umit.kilicoglu@icloud.com?subject=Projet%20publicitaire">Parlons de votre projet ↗</a>
+</section>
+<section>
+<div class="tag">NOS RÉALISATIONS</div>
+<h2>Deux univers. <span>Une ambition.</span></h2>
+<div class="card">
+<div class="art">🍔</div>
+<h3>Food — « Tu as faim ? »</h3>
+<p>Concept publicitaire gourmand, imaginé pour capter l'attention et mettre un produit en valeur.</p>
+<small>CONCEPT CRÉATIF</small>
+</div>
+<div class="card">
+<div class="art">✦ ◈ ✦</div>
+<h3>Parfum — « Le luxe se ressent »</h3>
+<p>Univers sombre et élégant, voix off française et ambiance premium.</p>
+<small>CONCEPT CRÉATIF</small>
+</div>
+</section>
+<section>
+<div class="tag">NOS SERVICES</div>
+<h2>Du contenu fait pour <span>marquer les esprits.</span></h2>
+<div class="card"><h3>01 — Publicités courtes</h3><p>Vidéos verticales pensées pour les réseaux sociaux.</p></div>
+<div class="card"><h3>02 — Visuels créatifs IA</h3><p>Images et univers visuels adaptés aux produits et aux marques.</p></div>
+<div class="card"><h3>03 — Montage & voix off</h3><p>Textes, musique, narration et montage dynamique.</p></div>
+</section>
+<section>
+<div class="card">
+<div class="tag">UN PROJET EN TÊTE ?</div>
+<h2>Créons quelque chose qui <span>se remarque.</span></h2>
+<p>Parlez-moi de votre marque, de votre produit ou de votre idée.</p>
+<a class="btn" href="mailto:umit.kilicoglu@icloud.com?subject=Projet%20Nova%20IA%20Studio">Écrire un e-mail ↗</a>
+<p>umit.kilicoglu@icloud.com</p>
+</div>
+</section>
+<footer>© 2026 Nova IA Studio · Publicités créatives avec l’IA</footer>
+</body>
+</html>
