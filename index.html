@@ -36,9 +36,24 @@ section{padding:75px 8%}
 .service .emoji{font-size:30px}
 .service h3{margin:12px 0}
 .service p{color:#aaa;font-size:14px}
+
+/* NOUVELLE SECTION : COMMENT ÇA MARCHE */
+.how{background:radial-gradient(ellipse at center,#1b1030 0%,#080711 75%)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1050px;margin:40px auto 0}
+.step{background:linear-gradient(145deg,#1b1429,#110d1b);border:1px solid #493064;border-radius:18px;padding:28px 24px;text-align:center;transition:transform .25s,border-color .25s}
+.step:hover{transform:translateY(-5px);border-color:#bd83ff}
+.step-number{width:48px;height:48px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#8c3bdb,#c078ff);font-size:21px;font-weight:bold}
+.step h3{font-size:19px;margin-bottom:10px}
+.step p{color:#aaa;font-size:14px}
+.step-icon{font-size:27px;margin-bottom:12px}
+
 .contact{text-align:center;background:radial-gradient(ellipse at center,#25113e,#080711 70%)}
 .contact p{color:#bbb;margin:15px auto 28px}
 footer{text-align:center;padding:25px;color:#777;font-size:13px;border-top:1px solid #29203e}
+
+@media(max-width:700px){
+.steps{grid-template-columns:1fr;max-width:430px}
+}
 @media(max-width:600px){
 header{flex-direction:column;gap:12px}
 nav a{margin:0 8px}
@@ -54,6 +69,7 @@ section{padding:55px 6%}
 <div class="logo">✦ NOVA IA STUDIO</div>
 <nav>
 <a href="#videos">Nos créations</a>
+<a href="#how">Comment ça marche</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -86,7 +102,7 @@ loading="lazy">
 </div>
 <h3>🍔 Burger – Food advertising</h3>
 <p>Une publicité gourmande et dynamique pour mettre un produit en valeur.</p>
-<a class="video-link" href="https://youtube.com/shorts/XfYNU5_S1rs" target="_blank">Voir la vidéo sur YouTube</a>
+<a class="video-link" href="https://youtube.com/shorts/XfYNU5_S1rs" target="_blank" rel="noopener">Voir la vidéo sur YouTube</a>
 </article>
 
 <article class="video-card">
@@ -101,8 +117,39 @@ loading="lazy">
 </div>
 <h3>🌸 Parfum – Luxury advertising</h3>
 <p>Une ambiance élégante et premium pour sublimer un produit.</p>
-<a class="video-link" href="https://youtube.com/shorts/O2RN9UiAa9g" target="_blank">Voir la vidéo sur YouTube</a>
+<a class="video-link" href="https://youtube.com/shorts/O2RN9UiAa9g" target="_blank" rel="noopener">Voir la vidéo sur YouTube</a>
 </article>
+
+</div>
+</section>
+
+<!-- NOUVELLE SECTION -->
+<section class="how" id="how">
+<h2 class="section-title">Comment ça marche ?</h2>
+<p class="section-sub">De votre idée à votre publicité, un processus simple en 3 étapes.</p>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-icon">💬</div>
+<div class="step-number">1</div>
+<h3>Vous nous présentez votre projet</h3>
+<p>Vous nous expliquez votre activité, votre produit et le style de publicité que vous imaginez.</p>
+</div>
+
+<div class="step">
+<div class="step-icon">🎨</div>
+<div class="step-number">2</div>
+<h3>Nous créons votre publicité</h3>
+<p>Nous imaginons un concept, créons les visuels avec l'IA et réalisons le montage vidéo.</p>
+</div>
+
+<div class="step">
+<div class="step-icon">🚀</div>
+<div class="step-number">3</div>
+<h3>Votre vidéo est prête</h3>
+<p>Vous recevez votre création vidéo, pensée pour mettre votre produit en valeur sur les réseaux sociaux.</p>
+</div>
 
 </div>
 </section>
