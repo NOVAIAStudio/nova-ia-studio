@@ -46,10 +46,9 @@ section{padding:75px 8%}
 .step p{color:#aaa;font-size:14px}
 .step-icon{font-size:27px;margin-bottom:12px}
 
-/* TARIFS */
 .pricing{background:linear-gradient(180deg,#100b19,#080711)}
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:40px auto 0;align-items:stretch}
-.price-card{position:relative;background:linear-gradient(145deg,#1b1429,#100c19);border:1px solid #38244f;border-radius:20px;padding:30px 24px;text-align:center;display:flex;flex-direction:column}
+.price-card{background:linear-gradient(145deg,#1b1429,#100c19);border:1px solid #38244f;border-radius:20px;padding:30px 24px;text-align:center;display:flex;flex-direction:column}
 .price-card.featured{border:2px solid #a45be8;transform:scale(1.04);box-shadow:0 0 35px #8c3bdb22}
 .popular{display:inline-block;background:linear-gradient(90deg,#8c3bdb,#c078ff);padding:5px 14px;border-radius:20px;font-size:11px;font-weight:bold;margin:-5px auto 15px}
 .price-card h3{font-size:21px;margin-bottom:8px}
@@ -62,6 +61,16 @@ section{padding:75px 8%}
 .price-card .btn{margin-top:12px;padding:13px 18px;font-size:14px}
 .price-note{text-align:center;color:#888;font-size:12px;margin:28px auto 0;max-width:700px}
 
+/* POURQUOI NOUS CHOISIR */
+.why{background:radial-gradient(ellipse at center,#211333 0%,#080711 75%)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1100px;margin:40px auto}
+.why-card{background:linear-gradient(145deg,#1b1429,#100c19);border:1px solid #493064;border-radius:18px;padding:25px 18px;text-align:center;transition:transform .25s,border-color .25s}
+.why-card:hover{transform:translateY(-5px);border-color:#bd83ff}
+.why-icon{font-size:35px;margin-bottom:15px}
+.why-card h3{font-size:17px;margin-bottom:10px}
+.why-card p{font-size:13px;color:#aaa}
+.why-bottom{text-align:center;color:#c99aff;font-size:15px;margin-top:15px}
+
 .services{background:#100b19}
 .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:35px}
 .service{background:#1b1427;border:1px solid #352345;border-radius:15px;padding:25px}
@@ -72,6 +81,9 @@ section{padding:75px 8%}
 .contact p{color:#bbb;margin:15px auto 28px}
 footer{text-align:center;padding:25px;color:#777;font-size:13px;border-top:1px solid #29203e}
 
+@media(max-width:900px){
+.why-grid{grid-template-columns:repeat(2,1fr)}
+}
 @media(max-width:800px){
 .price-grid{grid-template-columns:1fr;max-width:430px}
 .price-card.featured{transform:none}
@@ -83,25 +95,25 @@ nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 nav a{margin:0 4px;font-size:12px}
 section{padding:55px 6%}
 .hero{padding:75px 18px}
+.why-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 
 <body>
-
 <header>
 <div class="logo">✦ NOVA IA STUDIO</div>
 <nav>
 <a href="#videos">Réalisations</a>
 <a href="#how">Comment ça marche</a>
 <a href="#pricing">Tarifs</a>
+<a href="#why">Pourquoi nous</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <main>
-
 <section class="hero">
 <div class="tag">Le futur de la publicité</div>
 <h1>Votre marque mérite une publicité <span>qui marque les esprits.</span></h1>
@@ -112,7 +124,6 @@ section{padding:55px 6%}
 <section id="videos">
 <h2 class="section-title">Nos réalisations</h2>
 <p class="section-sub">Découvrez comment nous transformons des produits en publicités vidéo captivantes.</p>
-
 <div class="videos">
 <article class="video-card">
 <div class="project-tag">Food advertising</div>
@@ -166,9 +177,7 @@ section{padding:55px 6%}
 <section class="pricing" id="pricing">
 <h2 class="section-title">Nos tarifs</h2>
 <p class="section-sub">Choisissez la formule adaptée à votre projet.</p>
-
 <div class="price-grid">
-
 <div class="price-card">
 <h3>STARTER</h3>
 <div class="price">49 €</div>
@@ -213,10 +222,37 @@ section{padding:55px 6%}
 </ul>
 <a class="btn" href="mailto:umit.kilicoglu@icloud.com?subject=Formule%20Signature%20-%20Nova%20IA%20Studio">Choisir Signature</a>
 </div>
-
 </div>
-
 <p class="price-note">Tarifs de lancement indicatifs. Le contenu final, la durée de la vidéo et les éventuelles demandes supplémentaires seront confirmés avant toute commande. Aucun paiement n'est demandé sur ce site.</p>
+</section>
+
+<section class="why" id="why">
+<h2 class="section-title">Pourquoi choisir Nova IA Studio ?</h2>
+<p class="section-sub">Une approche créative et moderne pour donner vie à vos idées.</p>
+
+<div class="why-grid">
+<div class="why-card">
+<div class="why-icon">🤖</div>
+<h3>Créativité IA</h3>
+<p>Des concepts visuels originaux pour présenter vos produits autrement.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">🎯</div>
+<h3>Sur mesure</h3>
+<p>Chaque projet est imaginé en fonction de votre produit et de votre univers.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">📱</div>
+<h3>Formats modernes</h3>
+<p>Des vidéos pensées pour les formats courts et les réseaux sociaux.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">✨</div>
+<h3>Style professionnel</h3>
+<p>Une attention portée à l'image, au montage et à la présentation de votre marque.</p>
+</div>
+</div>
+<p class="why-bottom">Votre idée mérite de devenir une création qui attire les regards.</p>
 </section>
 
 <section class="services" id="services">
@@ -246,12 +282,10 @@ section{padding:55px 6%}
 <p>Présentez-nous votre produit. Imaginons ensemble votre prochaine publicité.</p>
 <a class="btn" href="mailto:umit.kilicoglu@icloud.com?subject=Projet%20publicit%C3%A9%20Nova%20IA%20Studio">Contactez-nous</a>
 </section>
-
 </main>
 
 <footer>
 © 2026 Nova IA Studio – Créativité & Intelligence Artificielle
 </footer>
-
 </body>
 </html>
