@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nova IA Studio | Publicités vidéo IA</title>
 <meta name="description" content="Nova IA Studio crée des publicités vidéo modernes et percutantes grâce à l'intelligence artificielle.">
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -28,6 +29,7 @@ section{padding:75px 8%}
 .video-card p{color:#aaa;font-size:14px}
 .video-frame{position:relative;width:100%;aspect-ratio:9/16;max-height:520px;background:#000;border-radius:12px;overflow:hidden}
 .video-frame iframe{width:100%;height:100%;border:0;position:absolute;inset:0}
+.video-link{display:block;color:#c99aff;text-align:center;margin-top:12px;font-size:14px}
 .services{background:#100b19}
 .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:35px}
 .service{background:#1b1427;border:1px solid #352345;border-radius:15px;padding:25px}
@@ -37,83 +39,109 @@ section{padding:75px 8%}
 .contact{text-align:center;background:radial-gradient(ellipse at center,#25113e,#080711 70%)}
 .contact p{color:#bbb;margin:15px auto 28px}
 footer{text-align:center;padding:25px;color:#777;font-size:13px;border-top:1px solid #29203e}
-@media(max-width:600px){header{flex-direction:column;gap:12px}nav a{margin:0 8px}section{padding:55px 6%}.hero{padding:75px 18px}}
+@media(max-width:600px){
+header{flex-direction:column;gap:12px}
+nav a{margin:0 8px}
+section{padding:55px 6%}
+.hero{padding:75px 18px}
+}
 </style>
 </head>
+
 <body>
 
 <header>
-  <div class="logo">✦ NOVA IA STUDIO</div>
-  <nav>
-    <a href="#videos">Nos créations</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="logo">✦ NOVA IA STUDIO</div>
+<nav>
+<a href="#videos">Nos créations</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <main>
+
 <section class="hero">
-  <div class="tag">Le futur de la publicité</div>
-  <h1>Votre marque mérite une publicité <span>qui marque les esprits.</span></h1>
-  <p>Nous transformons vos idées et vos produits en vidéos publicitaires captivantes grâce à l'intelligence artificielle.</p>
-  <a class="btn" href="#contact">Créer ma publicité</a>
+<div class="tag">Le futur de la publicité</div>
+<h1>Votre marque mérite une publicité <span>qui marque les esprits.</span></h1>
+<p>Nous transformons vos idées et vos produits en vidéos publicitaires captivantes grâce à l'intelligence artificielle.</p>
+<a class="btn" href="#contact">Créer ma publicité</a>
 </section>
 
 <section id="videos">
-  <h2 class="section-title">Nos créations</h2>
-  <p class="section-sub">Découvrez quelques exemples de publicités réalisées avec l'IA.</p>
+<h2 class="section-title">Nos créations</h2>
+<p class="section-sub">Découvrez quelques exemples de publicités réalisées avec l'IA.</p>
 
-  <div class="videos">
-    <article class="video-card">
-      <div class="video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/XfYNU5_S1rs?playsinline=1&rel=0" title="Publicité vidéo burger" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <h3>🍔 Burger – Food advertising</h3>
-      <p>Une publicité gourmande et dynamique pour mettre un produit en valeur.</p>
-    </article>
+<div class="videos">
 
-    <article class="video-card">
-      <div class="video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/O2RN9UiAa9g?playsinline=1&rel=0" title="Publicité vidéo parfum" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <h3>🌸 Parfum – Luxury advertising</h3>
-      <p>Une ambiance élégante et premium pour sublimer un produit.</p>
-    </article>
-  </div>
+<article class="video-card">
+<div class="video-frame">
+<iframe
+src="https://www.youtube.com/embed/XfYNU5_S1rs"
+title="Publicité burger"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen
+loading="lazy">
+</iframe>
+</div>
+<h3>🍔 Burger – Food advertising</h3>
+<p>Une publicité gourmande et dynamique pour mettre un produit en valeur.</p>
+<a class="video-link" href="https://youtube.com/shorts/XfYNU5_S1rs" target="_blank">Voir la vidéo sur YouTube</a>
+</article>
+
+<article class="video-card">
+<div class="video-frame">
+<iframe
+src="https://www.youtube.com/embed/O2RN9UiAa9g"
+title="Publicité parfum"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen
+loading="lazy">
+</iframe>
+</div>
+<h3>🌸 Parfum – Luxury advertising</h3>
+<p>Une ambiance élégante et premium pour sublimer un produit.</p>
+<a class="video-link" href="https://youtube.com/shorts/O2RN9UiAa9g" target="_blank">Voir la vidéo sur YouTube</a>
+</article>
+
+</div>
 </section>
 
 <section class="services" id="services">
-  <h2 class="section-title">Nos services</h2>
-  <p class="section-sub">Des vidéos pensées pour attirer l'attention et valoriser votre marque.</p>
+<h2 class="section-title">Nos services</h2>
+<p class="section-sub">Des vidéos pensées pour attirer l'attention et valoriser votre marque.</p>
 
-  <div class="service-grid">
-    <div class="service">
-      <div class="emoji">🎬</div>
-      <h3>Publicités IA</h3>
-      <p>Des vidéos publicitaires créatives adaptées à vos produits et à votre identité.</p>
-    </div>
-    <div class="service">
-      <div class="emoji">📱</div>
-      <h3>Réseaux sociaux</h3>
-      <p>Des formats courts conçus pour TikTok, Instagram Reels et YouTube Shorts.</p>
-    </div>
-    <div class="service">
-      <div class="emoji">✨</div>
-      <h3>Contenu premium</h3>
-      <p>Des visuels modernes et des concepts originaux pour faire ressortir votre marque.</p>
-    </div>
-  </div>
+<div class="service-grid">
+<div class="service">
+<div class="emoji">🎬</div>
+<h3>Publicités IA</h3>
+<p>Des vidéos publicitaires créatives adaptées à vos produits et à votre identité.</p>
+</div>
+
+<div class="service">
+<div class="emoji">📱</div>
+<h3>Réseaux sociaux</h3>
+<p>Des formats courts conçus pour TikTok, Instagram Reels et YouTube Shorts.</p>
+</div>
+
+<div class="service">
+<div class="emoji">✨</div>
+<h3>Contenu premium</h3>
+<p>Des visuels modernes et des concepts originaux pour faire ressortir votre marque.</p>
+</div>
+</div>
 </section>
 
 <section class="contact" id="contact">
-  <h2 class="section-title">Un projet en tête ?</h2>
-  <p>Présentez-nous votre produit. Imaginons ensemble votre prochaine publicité.</p>
-  <a class="btn" href="mailto:umit.kilicoglu@icloud.com?subject=Projet%20publicit%C3%A9%20Nova%20IA%20Studio">Contactez-nous</a>
+<h2 class="section-title">Un projet en tête ?</h2>
+<p>Présentez-nous votre produit. Imaginons ensemble votre prochaine publicité.</p>
+<a class="btn" href="mailto:umit.kilicoglu@icloud.com?subject=Projet%20publicit%C3%A9%20Nova%20IA%20Studio">Contactez-nous</a>
 </section>
+
 </main>
 
 <footer>
-  © 2026 Nova IA Studio – Créativité & Intelligence Artificielle
+© 2026 Nova IA Studio – Créativité & Intelligence Artificielle
 </footer>
 
 </body>
